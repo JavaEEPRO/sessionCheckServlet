@@ -31,6 +31,9 @@
     </dependencies>
 
     <build>
+
+    <finalName>CDI</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
