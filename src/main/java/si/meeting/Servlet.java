@@ -17,7 +17,7 @@ public class Servlet extends HttpServlet {
         HttpSession session = req.getSession();
 
         if (session.getValue("name") == null) {
-            session.putValue("name", "forgive us Lord in this session");
+            session.putValue("name", " forgive us Lord in this session");
             resp.getWriter().append(" (no session yet) ");
         }else{
             resp.getWriter().append((String)session.getValue("name"));
