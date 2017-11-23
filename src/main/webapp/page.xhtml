@@ -8,4 +8,18 @@
 <f:view>
     <h:outputLabel value="#{exampleBean.string}"/>
 </f:view>
+
+<h:body>
+    <h:form>
+          Ваш  логин: <h:inputText value = "#{exampleBean.name}" />
+        <br/>
+        Секретный ключ:<h:inputText value = "#{exampleBean.password}" />
+        <br/>
+        <h:commandLink value = "Залогиниться" action = "#{exampleBean.doLogIn()}" />
+        <br/>
+        <br/>
+        <h:outputLabel value = "состояние флага LOGGED:" />
+        <h:outputLabel value = "#{exampleBean.logged}" />
+    </h:form>
+</h:body>
 </html>
