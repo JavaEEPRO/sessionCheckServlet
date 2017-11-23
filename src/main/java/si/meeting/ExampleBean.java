@@ -1,9 +1,12 @@
 package si.meeting;
 
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
+import java.io.Serializable;
 
 @Named
-public class ExampleBean {
+@SessionScoped
+public class ExampleBean implements Serializable {
 
     String string = "CDI example";
     private String name;
